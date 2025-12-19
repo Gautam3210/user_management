@@ -18,7 +18,7 @@ export const Cards = () => {
     },[])
   return (
     <div className="users-grid">
-        {userLists.map(user => <Card user={user}/>)}   
+        {userLists.map(user => <Card key={user.id} user={user} />)}   
     </div>
   )
 }

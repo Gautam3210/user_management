@@ -1,10 +1,15 @@
 import React from 'react'
 import "./Card.css"
+import { useNavigate } from 'react-router-dom'
 
 export const Card = ({user}) => {
+  const navigate = useNavigate();
+  const handleOnClickUser = (user) =>{
+    navigate(`/userInfo/${user.id}`)
+  }
   return (
     
-    <div className="user-card">
+    <div className="user-card" onClick={()=> handleOnClickUser(user)}>
       <img src={user.image} alt={user.firstName} className="user-img" />
 
       <div className="user-details">
