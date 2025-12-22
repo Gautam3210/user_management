@@ -8,7 +8,7 @@ export const Navbar = () => {
       <h2 className="logo">MyApp</h2>
       
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
+        <li><Link to="/home">Home</Link></li>
         <li><Link to="/addUser">Add User</Link></li>
         <li><Link to="/contact">Contact</Link></li>
       </ul>
