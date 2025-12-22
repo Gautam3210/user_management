@@ -16,6 +16,7 @@ export const Cards = () => {
         }
         fetchData();
     },[])
+    
   return (
     <div className="users-grid">
         {userLists.map(user => <Card key={user.id} user={user} />)}   

@@ -1,10 +1,18 @@
 import React from 'react'
 import "./Card.css"
 import { useNavigate } from 'react-router-dom'
+import { useDispatch} from 'react-redux';
+import { addUser } from '../store/store';
 
 export const Card = ({user}) => {
+
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const handleOnClickUser = (user) =>{
+
+    dispatch(addUser(user))
+
     navigate(`/userInfo/${user.id}`)
   }
   return (
