@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav className="navbar">
-      <h2 className="logo">MyApp</h2>
+      <h2 className="logo">User Management</h2>
       
       <ul className="nav-links">
         <li><Link to="/home">Home</Link></li>
         <li><Link to="/addUser">Add User</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        {/* <li><Link to="/contact">Contact</Link></li> */}
       </ul>
     </nav>
   );
